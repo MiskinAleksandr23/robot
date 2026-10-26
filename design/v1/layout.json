@@ -1,0 +1,325 @@
+{
+  "parts": [
+    {
+      "id": "hip_l",
+      "label": "Левое бедро",
+      "center": [
+        -22,
+        0,
+        81
+      ],
+      "size": [
+        34,
+        15,
+        30
+      ],
+      "zone": "body",
+      "kind": "servo"
+    },
+    {
+      "id": "hip_r",
+      "label": "Правое бедро",
+      "center": [
+        22,
+        0,
+        81
+      ],
+      "size": [
+        34,
+        15,
+        30
+      ],
+      "zone": "body",
+      "kind": "servo"
+    },
+    {
+      "id": "battery",
+      "label": "Аккумулятор 2S",
+      "center": [
+        0,
+        0,
+        107
+      ],
+      "size": [
+        50,
+        30,
+        18
+      ],
+      "zone": "body",
+      "kind": "battery"
+    },
+    {
+      "id": "pi",
+      "label": "Raspberry Pi",
+      "center": [
+        0,
+        -22,
+        105
+      ],
+      "size": [
+        65,
+        6,
+        30
+      ],
+      "zone": "body",
+      "kind": "logic"
+    },
+    {
+      "id": "esp32",
+      "label": "ESP32",
+      "center": [
+        0,
+        22,
+        108
+      ],
+      "size": [
+        52,
+        7,
+        28
+      ],
+      "zone": "body",
+      "kind": "logic"
+    },
+    {
+      "id": "servo_bec",
+      "label": "UBEC приводов",
+      "center": [
+        0,
+        -18,
+        76
+      ],
+      "size": [
+        50,
+        17,
+        10
+      ],
+      "zone": "body",
+      "kind": "power"
+    },
+    {
+      "id": "logic_bec",
+      "label": "UBEC логики",
+      "center": [
+        0,
+        18,
+        75
+      ],
+      "size": [
+        43,
+        17,
+        7
+      ],
+      "zone": "body",
+      "kind": "power"
+    },
+    {
+      "id": "imu",
+      "label": "IMU",
+      "center": [
+        0,
+        0,
+        120
+      ],
+      "size": [
+        20,
+        16,
+        4
+      ],
+      "zone": "body",
+      "kind": "logic"
+    },
+    {
+      "id": "amp",
+      "label": "Усилитель",
+      "center": [
+        35,
+        0,
+        108
+      ],
+      "size": [
+        3,
+        18,
+        18
+      ],
+      "zone": "body",
+      "kind": "audio"
+    },
+    {
+      "id": "mic",
+      "label": "Микрофон",
+      "center": [
+        -35,
+        0,
+        108
+      ],
+      "size": [
+        3,
+        14,
+        18
+      ],
+      "zone": "body",
+      "kind": "audio"
+    },
+    {
+      "id": "speaker",
+      "label": "Динамик",
+      "center": [
+        0,
+        24,
+        86
+      ],
+      "size": [
+        28,
+        5,
+        12
+      ],
+      "zone": "body",
+      "kind": "audio"
+    },
+    {
+      "id": "head_yaw",
+      "label": "Поворот головы",
+      "center": [
+        0,
+        0,
+        137
+      ],
+      "size": [
+        23,
+        12,
+        29
+      ],
+      "zone": "neck",
+      "kind": "servo"
+    },
+    {
+      "id": "head_pitch",
+      "label": "Наклон головы",
+      "center": [
+        23,
+        0,
+        171
+      ],
+      "size": [
+        12,
+        23,
+        29
+      ],
+      "zone": "head",
+      "kind": "servo"
+    },
+    {
+      "id": "camera",
+      "label": "Камера",
+      "center": [
+        0,
+        12,
+        171
+      ],
+      "size": [
+        25,
+        9,
+        24
+      ],
+      "zone": "head",
+      "kind": "logic"
+    },
+    {
+      "id": "foot_l",
+      "label": "Левая ступня",
+      "center": [
+        -29,
+        0,
+        25
+      ],
+      "size": [
+        34,
+        29,
+        15
+      ],
+      "zone": "leg",
+      "kind": "servo"
+    },
+    {
+      "id": "foot_r",
+      "label": "Правая ступня",
+      "center": [
+        29,
+        0,
+        25
+      ],
+      "size": [
+        34,
+        29,
+        15
+      ],
+      "zone": "leg",
+      "kind": "servo"
+    }
+  ],
+  "shells": [
+    {
+      "id": "body_shell",
+      "center": [
+        0,
+        0,
+        94
+      ],
+      "size": [
+        84,
+        58,
+        60
+      ]
+    },
+    {
+      "id": "head_shell",
+      "center": [
+        0,
+        0,
+        171
+      ],
+      "size": [
+        76,
+        38,
+        42
+      ]
+    },
+    {
+      "id": "sole_l",
+      "center": [
+        -29,
+        0,
+        7
+      ],
+      "size": [
+        48,
+        68,
+        14
+      ]
+    },
+    {
+      "id": "sole_r",
+      "center": [
+        29,
+        0,
+        7
+      ],
+      "size": [
+        48,
+        68,
+        14
+      ]
+    }
+  ],
+  "validation": {
+    "envelope_collisions": [],
+    "body_envelopes_outside_inner_volume": [],
+    "bom_rub": {
+      "min": 20330,
+      "max": 29900
+    },
+    "height_mm": 192,
+    "overall_stance_width_mm": 106,
+    "limitations": "AABB check only; no mounting/connector/cable/structural/thermal/kinematic validation. Sizes are target envelopes, not certified selected-product dimensions."
+  }
+}
